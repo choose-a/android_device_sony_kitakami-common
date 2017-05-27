@@ -179,8 +179,8 @@ PRODUCT_PACKAGES += \
 
 # lib shim
 PRODUCT_PACKAGES += \
-    libshim_wvm \
-    libshim_imsvt
+    libshim_imsvt \
+    libsonycamera
 
 # Snapdragon Camera
 PRODUCT_PACKAGES += \
