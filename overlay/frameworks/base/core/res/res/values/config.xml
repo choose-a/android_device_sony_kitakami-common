@@ -76,6 +76,4 @@
          Refer to power.h for details.
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
-
-    <bool name="config_fingerprintRemoveClientOnCancel">true</bool>
 </resources>

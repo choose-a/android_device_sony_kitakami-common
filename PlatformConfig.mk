@@ -136,4 +136,4 @@ TARGET_HW_DISK_ENCRYPTION := false
 
 TARGET_USES_IMS := true
 
-include device/sony/common/CommonConfigOmni.mk
+include device/sony/common/ChooseCommonConfig.mk

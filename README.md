@@ -14,6 +14,6 @@ Kitakami devices:
 
 Build instructions
 
-https://omnirom.org/
-https://github.com/omnirom/android
-https://docs.omnirom.org
+https://choose-a.name/
+https://github.com/choose-a/android
+https://docs.choose-a.name

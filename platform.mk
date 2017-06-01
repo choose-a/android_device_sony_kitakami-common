@@ -15,7 +15,7 @@
 # Platform path
 PLATFORM_COMMON_PATH := device/sony/kitakami-common
 
-$(call inherit-product, device/sony/common/common_omni.mk)
+$(call inherit-product, device/sony/common/choose_common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
@@ -27,9 +27,9 @@ SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 # We use caf hals for media / display and audio
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
-TARGET_QCOM_DISPLAY_VARIANT := caf-msm8992
-TARGET_QCOM_MEDIA_VARIANT := caf-msm8992
-TARGET_QCOM_AUDIO_VARIANT := caf-msm8992
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8994
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8994
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8994
 
 # GPU
 BOARD_USES_ADRENO := true
@@ -224,7 +224,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 endif
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.semc.version.cust=OmniROM \
+    ro.semc.version.cust=ChooseAROM \
     ro.semc.version.cust_revision=$(PLATFORM_VERSION)_$(BUILD_ID)
 
 # TWRP
