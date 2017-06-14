@@ -133,20 +133,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8994 \
     liboverlay
 
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8952 \
-    libgnsspps \
-    libcurl
-
-PRODUCT_PACKAGES += \
-    flp.conf \
-    gps.conf \
-    izat.conf \
-    lowi.conf \
-    sap.conf \
-    xtwifi.conf
-
 # Extra tools
 PRODUCT_PACKAGES += \
     tinycap \
@@ -154,12 +140,6 @@ PRODUCT_PACKAGES += \
     tinypcminfo \
     tinyplay \
     libtinyxml
-
-# IPA
-PRODUCT_PACKAGES += \
-    ipacm \
-    ipacm-diag \
-    IPACM_cfg.xml
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -185,13 +165,6 @@ PRODUCT_PACKAGES += \
 # Snapdragon Camera
 PRODUCT_PACKAGES += \
     SnapdragonCamera
-
-# Telephony
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext \
-    rcscommon \
-    rcscommon.xml
 
 # GPS
 PRODUCT_PACKAGES += \
