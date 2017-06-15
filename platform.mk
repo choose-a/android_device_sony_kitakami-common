@@ -164,7 +164,8 @@ PRODUCT_PACKAGES += \
 
 # Snapdragon Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    SnapdragonCamera \
+    SnapdragonGallery
 
 # GPS
 PRODUCT_PACKAGES += \
