@@ -78,6 +78,9 @@ BOARD_CUSTOM_BT_CONFIG := $(PLATFORM_COMMON_PATH)/bluetooth/vnd_generic.txt
 # RIL
 TARGET_PER_MGR_ENABLED := true
 
+# Camera uses media ext
+TARGET_USES_MEDIA_EXTENSIONS := true
+
 # NFC
 NXP_CHIP_TYPE := PN547C2
 
