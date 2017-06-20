@@ -153,5 +153,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1
 
+# Snapdragon
+PRODUCT_PACKAGES += \
+    SnapdragonCamera \
+    SnapdragonGallery
+
 # TWRP
 #$(call inherit-product, device/sony/kitakami-common/twrp.mk)
