@@ -1,0 +1,32 @@
+[
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_device_sony_common",
+    "target_path":  "device/sony/common",
+    "revision":     "choose-7.1"
+  },
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_kernel_sony_msm",
+    "target_path":  "kernel/sony/msm",
+    "revision":     "choose-7.1"
+  },
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_hardware_qcom_camera",
+    "target_path":  "hardware/qcom/camera",
+    "revision":     "choose-7.1"
+  },
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_packages_apps_SnapdragonCamera",
+    "target_path":  "packages/apps/SnapdragonCamera",
+    "revision":     "choose-7.1"
+  },
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_packages_apps_SnapdragonGallery",
+    "target_path":  "packages/apps/SnapdragonGallery",
+    "revision":     "choose-7.1"
+  }
+]

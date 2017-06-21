@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/kitakami
+PLATFORM_COMMON_PATH := device/sony/kitakami-common
 
 TARGET_BOARD_PLATFORM := msm8994
 TARGET_KERNEL_VERSION := 3.10
@@ -91,4 +91,4 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
 
-include device/sony/common/CommonConfig.mk
+include device/sony/common/ChooseCommonConfig.mk
