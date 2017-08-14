@@ -35,29 +35,4 @@
     "target_path":  "hardware/qcom/media-caf-msm8994",
     "revision":     "choose-7.1"
   },
-  {
-    "remote":       "choose-a",
-    "repository":   "choose-a/android_hardware_sony_dataservices",
-    "target_path":  "hardware/sony/dataservices",
-    "revision":     "choose-7.1"
-  },
-  {
-    "remote":       "choose-a",
-    "repository":   "choose-a/android_external_libnfnetlink",
-    "target_path":  "external/libnfnetlink",
-    "revision":     "choose-7.1"
-  },
-  {
-    "remote":       "choose-a",
-    "repository":   "choose-a/android_packages_apps_SnapdragonCamera",
-    "target_path":  "packages/apps/SnapdragonCamera",
-    "revision":     "choose-7.1"
-  },
-  {
-    "remote":       "choose-a",
-    "repository":   "choose-a/android_external_libnetfilter_conntrack",
-    "target_path":  "external/libnetfilter_conntrack",
-    "revision":     "choose-7.1"
-  }
-
 ]
