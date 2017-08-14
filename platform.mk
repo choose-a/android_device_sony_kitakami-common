@@ -77,10 +77,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/msm_irqbalance.conf:system/etc/msm_irqbalance.conf
 
-# GTS
-PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/system/etc/gts_config_list.txt:system/etc/gts_config_list.txt
-
 # RQBalance-PowerHAL configuration
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/rqbalance_config.xml:system/etc/rqbalance_config.xml
@@ -89,7 +85,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:/system/etc/a2dp_audio_policy_configuration.xml \
@@ -229,3 +226,18 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # TWRP
 $(call inherit-product, device/sony/kitakami-common/twrp.mk)
+
+# RILD
+PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    ril.subscription.types=NV,RUIM
+
+# system prop for opengles version
+# 196609 is decimal for 0x30001 to
+# report major/minor versions as 3/1
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196609
+
+# FM Radio Dep
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rfkilldisabled=1

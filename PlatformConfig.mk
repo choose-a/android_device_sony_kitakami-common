@@ -16,6 +16,7 @@
 PLATFORM_COMMON_PATH := device/sony/kitakami-common
 
 TARGET_BOARD_PLATFORM := msm8994
+TARGET_KERNEL_VERSION := 3.10
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -77,6 +78,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # NFC
 NXP_CHIP_TYPE := PN547C2
+NXP_CHIP_FW_TYPE := PN547C2
 
 # FM definitions for Broadcom solution
 BOARD_HAVE_ALTERNATE_FM := true
@@ -127,8 +129,13 @@ TARGET_SYSTEM_PROP += $(PLATFORM_COMMON_PATH)/system.prop
 # SELinux
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 include device/qcom/sepolicy/sepolicy.mk
-endif
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
+endif
+# SELinux
+ifeq ($(BOARD_USES_QCOM_HARDWARE),)
+# SELinux
+BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
+endif
 
 TARGET_HW_DISK_ENCRYPTION := false
 

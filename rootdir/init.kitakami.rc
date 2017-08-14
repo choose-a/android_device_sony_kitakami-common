@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import init.common.usb.rc
+import init.common.rc
+import init.common.usb-legacy.rc
 import init.kitakami.pwr.rc
 
 on early-init
@@ -78,6 +79,8 @@ on init
 
 on fs
     mount_all ./fstab.kitakami  --early
+    write /sys/block/zram0/max_comp_streams 8
+    symlink /dev/block/platform/soc.0/f9824900.sdhci /dev/block/bootdevice
     swapon_all ./fstab.kitakami
 
 on post-fs
