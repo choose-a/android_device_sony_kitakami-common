@@ -225,9 +225,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.semc.version.cust=ChooseAROM \
     ro.semc.version.cust_revision=$(PLATFORM_VERSION)_$(BUILD_ID)
 
-# TWRP
-$(call inherit-product, device/sony/kitakami-common/twrp.mk)
-
 # RILD
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
