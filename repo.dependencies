@@ -12,8 +12,8 @@
     "revision":     "choose-7.1"
   },
   {
-    "remote":       "stock-a",
-    "repository":   "stock-a/android_device_qcom_caf-sepolicy",
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_device_qcom_caf-sepolicy",
     "target_path":  "device/qcom/sepolicy",
     "revision":     "choose-7.1"
   },
@@ -35,4 +35,16 @@
     "target_path":  "hardware/qcom/media-caf-msm8994",
     "revision":     "choose-7.1"
   },
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_external_libnfnetlink",
+    "target_path":  "external/libnfnetlink",
+    "revision":     "choose-7.1"
+  },
+  {
+    "remote":       "choose-a",
+    "repository":   "choose-a/android_external_libnetfilter_conntrack",
+    "target_path":  "external/libnetfilter_conntrack",
+    "revision":     "choose-7.1"
+  }
 ]
