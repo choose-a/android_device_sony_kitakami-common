@@ -25,16 +25,10 @@ PRODUCT_PLATFORM := $(SOMC_PLATFORM)
 
 SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 
-# We use caf hals for media / display and audio
-BOARD_USES_QCOM_HARDWARE := true
-TARGET_USES_QCOM_BSP := true
-TARGET_QCOM_DISPLAY_VARIANT := caf-msm8994
-TARGET_QCOM_MEDIA_VARIANT := caf-msm8994
-TARGET_QCOM_AUDIO_VARIANT := caf-msm8994
+BOARD_USES_QCOM_HARDWARE    := true
 
 # GPU
 BOARD_USES_ADRENO := true
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno418.
 
 # CNE
 BOARD_USES_QCNE := true
@@ -56,8 +50,7 @@ PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(SONY_ROOT)/system/etc/audio_platform_info_i2s.xml:system/etc/audio_platform_info_i2s.xml \
     $(SONY_ROOT)/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    $(SONY_ROOT)/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    $(SONY_ROOT)/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
+    $(SONY_ROOT)/system/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # Broadcom BT
 PRODUCT_COPY_FILES += \
