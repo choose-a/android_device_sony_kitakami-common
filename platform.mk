@@ -124,20 +124,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8994 \
     liboverlay
 
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8952 \
-    libgnsspps \
-    libcurl
-
-PRODUCT_PACKAGES += \
-    flp.conf \
-    gps.conf \
-    izat.conf \
-    lowi.conf \
-    sap.conf \
-    xtwifi.conf
-
 # Extra tools
 PRODUCT_PACKAGES += \
     tinycap \

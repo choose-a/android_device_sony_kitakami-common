@@ -1,4 +1,0 @@
-rw_dir_file(location, sysfs_subsys)
-rw_dir_file(location, sysfs_pronto)
-
-allow location self:capability { net_raw } ;
