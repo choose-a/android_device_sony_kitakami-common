@@ -22,17 +22,5 @@
     "repository":   "stock-a/android_hardware_qcom_audio-caf-msm8994",
     "target_path":  "hardware/qcom/audio-caf-msm8994",
     "revision":     "choose-7.1"
-  },
-  {
-    "remote":       "choose-a",
-    "repository":   "choose-a/android_external_libnfnetlink",
-    "target_path":  "external/libnfnetlink",
-    "revision":     "choose-7.1"
-  },
-  {
-    "remote":       "choose-a",
-    "repository":   "choose-a/android_external_libnetfilter_conntrack",
-    "target_path":  "external/libnetfilter_conntrack",
-    "revision":     "choose-7.1"
   }
 ]

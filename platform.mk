@@ -146,12 +146,6 @@ PRODUCT_PACKAGES += \
     tinyplay \
     libtinyxml
 
-# IPA
-PRODUCT_PACKAGES += \
-    ipacm \
-    ipacm-diag \
-    IPACM_cfg.xml
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \

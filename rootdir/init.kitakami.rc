@@ -215,14 +215,6 @@ on post-fs-data
     # SONY: Create a dir for apfd script files
     mkdir /data/system/apfd 0770 system system
 
-    # qti-logkit data
-    mkdir /data/misc/qti-logkit/ 0771 system system
-    mkdir /data/misc/qti-logkit/shared-privileged/ 2770 system system
-    mkdir /data/misc/qti-logkit/shared-public/ 2770 system qcom_diag
-    mkdir /data/misc/qti-logkit/socket-privileged/ 2770 system system
-    mkdir /data/misc/qti-logkit/socket-public/ 2750 system qcom_diag
-    mkdir /data/misc/qti-logkit/logdata/ 2750 system shell
-
     # SONY: Camera
     mkdir /data/camera 0770 media camera
     chown cameraserver camera /sys/devices/sony_camera_0/info
@@ -600,25 +592,6 @@ service fingerprintd /system/bin/fingerprintd
     class late_start
     user system
     group input
-
-service ipacm-diag /system/vendor/bin/ipacm-diag
-    class main
-    user system
-    socket ipacm_log_file dgram 660 system net_admin
-    group net_admin qcom_diag
-    disabled
-
-service ipacm /system/bin/ipacm
-    class main
-    user net_admin
-    group net_admin inet
-    disabled
-
-service qti /system/vendor/bin/qti
-    class main
-    user radio
-    group radio net_raw qcom_diag usb net_admin
-    disabled
 
 service adsprpcd /system/vendor/bin/adsprpcd
    class main
