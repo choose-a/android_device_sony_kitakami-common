@@ -1,0 +1,13 @@
+#============= untrusted_app ==============
+allow untrusted_app adbtcpes_prop:file { getattr open };
+allow untrusted_app boot_animation_prop:file { getattr open };
+allow untrusted_app device_logging_prop:file { getattr open };
+allow untrusted_app logpersistd_logging_prop:file { getattr open };
+allow untrusted_app mmc_prop:file { getattr open };
+allow untrusted_app safemode_prop:file { getattr open };
+allow untrusted_app sys_pad_prop:file { getattr open };
+allow untrusted_app sysfs_battery_supply:lnk_file read;
+allow untrusted_app sysfs_usb_supply:lnk_file read;
+allow untrusted_app tee_prop:file { getattr open };
+allow untrusted_app timekeep_prop:file { getattr open };
+allow untrusted_app xlat_prop:file { getattr open };

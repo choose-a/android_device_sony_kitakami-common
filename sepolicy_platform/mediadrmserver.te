@@ -1,0 +1,3 @@
+#============= mediadrmserver ==============
+allow mediadrmserver tad:unix_stream_socket connectto;
+allow mediadrmserver tad_socket:sock_file write;

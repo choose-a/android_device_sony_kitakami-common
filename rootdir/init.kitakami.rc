@@ -679,7 +679,6 @@ service secd /system/vendor/bin/secd
     socket secd_ebl_sock stream 0660 system credmgr_client
     socket secd_devsec_sock stream 0660 system credmgr_client
     socket secd_credmgr_sock stream 0660 system credmgr_client
-    seclabel u:r:secd:s0
 
 # SONY iddd daemon
 service iddd /system/vendor/bin/iddd

@@ -124,15 +124,8 @@ TARGET_PROVIDES_KEYMASTER := true
 TARGET_SYSTEM_PROP += $(PLATFORM_COMMON_PATH)/system.prop
 
 # SELinux
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
-endif
-# SELinux
-ifeq ($(BOARD_USES_QCOM_HARDWARE),)
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
-endif
 
 TARGET_HW_DISK_ENCRYPTION := false
 

@@ -1,0 +1,8 @@
+#============= cameraserver ==============
+allow cameraserver mm-qcamerad:unix_stream_socket connectto;
+allow cameraserver sysfs:file { write getattr };
+allow cameraserver sysfs_battery_supply:lnk_file read;
+allow cameraserver system_file:dir { read open };
+allow cameraserver system_server:unix_stream_socket read;
+allow cameraserver secd:unix_stream_socket connectto;
+allow cameraserver secd_socket:sock_file write;

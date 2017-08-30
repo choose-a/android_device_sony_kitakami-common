@@ -1,0 +1,4 @@
+#============= mm-qcamerad ==============
+allow mm-qcamerad ion_device:chr_file { read ioctl open };
+allow mm-qcamerad sysfs:file { read write open };
+allow mm-qcamerad rootfs:lnk_file getattr;
