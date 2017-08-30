@@ -15,6 +15,13 @@
 # Platform path
 PLATFORM_COMMON_PATH := device/sony/kitakami-common
 
+# Headers path
+TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_COMMON_PATH)/include
+
+# Override the default android_filesystem_config.h
+TARGET_ANDROID_FILESYSTEM_CONFIG_H := \
+    $(PLATFORM_COMMON_PATH)/include/private/android_filesystem_config.h
+
 TARGET_BOARD_PLATFORM := msm8994
 TARGET_KERNEL_VERSION := 3.10
 
